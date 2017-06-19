@@ -1,0 +1,222 @@
+<style>
+        input[type="text"]{
+            width: 99%;
+        }
+        
+        textarea {
+            width: 99%;
+            resize: none;
+        }
+        table {
+            width: 45%;
+        }
+        #tableOne th, #tableOne td {
+            width: 25%;
+        }
+        #tableTwo th, #tableTwo td {
+            width: 13%;
+        }
+        #tableTwo th.partField, #tableTwo td.partField {
+            width: 25%;
+        }
+        #tableThree th, #tableThree td {
+            width: 25%;
+        }
+    </style>
+
+<table id="tableOne">
+         <tr>
+             <td></td>
+             <td colspan="3"><h1 style="float:right;">Customer Operations Report</h1></td>
+         </tr>
+         <tr>
+             <th></th>
+             <th></th>
+             <th>Sales Rep</th>
+             <th>Date</th>
+         </tr>
+         <tr>
+             <td></td>
+             <td></td>
+             <td><input type="text" name="salesRep" /></td>
+             <td><input type="text" name="date" /></td>
+         </tr>
+         <tr>
+             <th colspan="2">Customer/Location</th>
+             <th>Product Number</th>
+             <th>Type of Wheel</th>
+         </tr>
+         <tr>
+             <td colspan="2"><input type="text" name="customerLocation" /></td>
+             <td><input type="text" name="productNumber" /></td>
+             <td><input type="text" name="typeOfWheel" /></td>
+         </tr>
+     </table>
+
+     <table>
+         <tr>
+             <th colspan="2" class="partField"><h3>Part</h3></th>
+             <th colspan="2"><h3>Tolerances</h3></th>
+             <th colspan="2"><h3>Springs</h3></th>
+         </tr>
+         <tr>
+             <th class="partField">Part Name</th>
+             <th class="partField">Part Size</th>
+             <th>Size</th>
+             <th>Parallel</th>
+             <th>Wire Type</th>
+             <th>Length</th>
+         </tr>
+         <tr>
+             <td class="partField"><input type="text" name="partName" /></td>
+             <td class="partField"><input type="text" name="partSize" /></td>
+             <td><input type="text" name="size" /></td>
+             <td><input type="text" name="parallel" /></td>
+             <td><input type="text" name="wireType" /></td>
+             <td><input type="text" name="length" /></td>             
+         </tr>
+         <tr>
+             <th class="partField">Material</th>
+             <th class="partField">Total Stock Removal</th>
+             <th>Flat</th>
+             <th>Finish</th>
+             <th>Wire Dia</th>
+             <th># of Coils</th>
+         </tr>
+         <tr>
+             <td class="partField"><input type="text" name="material" /></td>
+             <td class="partField"><input type="text" name="totalStockRemoval" /></td>
+             <td><input type="text" name="flat" /></td>
+             <td><input type="text" name="finish" /></td>
+             <td><input type="text" name="wireDia" /></td>
+             <td><input type="text" name="numOfCoils" /></td>             
+         </tr>
+         <tr>
+             <th class="partField">Production Rate</th>
+             <th class="partField">Removal/Pass</th>
+             <th colspan="2">Roundness</th>
+             <th>Spring OD</th>
+             <th>Rate</th>
+         </tr>
+         <tr>
+             <td class="partField"><input type="text" name="productionRate" /></td>
+             <td class="partField"><input type="text" name="removalPass" /></td>
+             <td colspan="2"><input type="text" name="roundness" /></td>
+             <td><input type="text" name="springOD" /></td>
+             <td><input type="text" name="rate" /></td>             
+         </tr>
+         <tr>
+             <th class="partField">Hardness</th>
+         </tr>
+         <tr>
+             <td class="partField"><input type="text" name="hardness" /></td>
+         </tr>
+     </table>
+
+     <table>
+         <tr>
+             <th colspan="6"><h3>Abrasives</h3></th>
+         </tr>
+         <tr>
+             <th colspan="6">Specification of Current Wheel</th>
+         </tr>
+         <tr>
+             <td colspan="6"><input type="text" name="specificationOfCurrentWheel" /></td>
+         </tr>
+         <tr>
+             <th colspan="4">Wheel Size/Sections</th>
+             <th colspan="2">Critical Tolerances</th>
+         </tr>
+         <tr>
+             <td colspan="4"><input type="text" name="wheelSizeSections" /></td>
+             <td colspan="2"><input type="text" name="criticalTolerances" /></td>
+         </tr>
+         <tr>
+             <th colspan="3">Drilling</th>
+             <th colspan="3">Slots/Perfs/Oil Holes</th>
+         </tr>
+         <tr>
+             <td colspan="3"><input type="text" name="drilling" /></td>
+             <td colspan="3"><input type="text" name="slotsPerfsOilHoles" /></td>
+         </tr>
+         <tr>
+             <th colspan="2">Reg Wheel Size</th>
+             <th colspan="2">Reg Wheel Spec</th>
+             <th colspan="2">Reg Wheel Recess</th>
+         </tr>
+         <tr>
+             <td colspan="2"><input type="text" name="regWheelSize" /></td>
+             <td colspan="2"><input type="text" name="regWheelSpec" /></td>
+             <td colspan="2"><input type="text" name="regWheelRecess" /></td>             
+         </tr>
+     </table>
+
+     <table id="tableThree">
+         <tr>
+             <th colspan="4"><h3>Grinder</h3></th>
+         </tr>
+         <tr>
+             <th>Make Model</th>
+             <th>Spindle RPM</th>
+             <th>Horsepower</th>
+             <th>Direction of Rotation</th>
+         </tr>
+         <tr>
+             <td><input type="text" name="makeModel" /></td>
+             <td><input type="text" name="spindleRPM" /></td>
+             <td><input type="text" name="horsepower" /></td>
+             <td><input type="text" name="directionOfRotation" /></td>             
+         </tr>
+     </table>
+     <table>
+         <tr>
+             <th>Wet or Dry Grind</th>
+             <th>Coolant Type</th>
+             <th>Coolant System Cap/Flow</th>
+         </tr>
+         <tr>
+             <td><input type="text" name="wetOrDryGrind" /></td>
+             <td><input type="text" name="coolantType" /></td>
+             <td><input type="text" name="coolantSystemCapFlow" /></td>
+         </tr>
+     </table>
+     <table id="tableFour">
+         <tr>
+             <th>Fixture:</th>
+             <th style="text-align:left;"><input type="checkbox" name="oscillatorFixture" /> Oscillator</th>
+             <th style="text-align:left;"><input type="checkbox" name="rotaryFixture" /> Rotary</th>
+             <th style="text-align:left;"><input type="checkbox" name="thruFeedFixture" /> Thru-Feed</th>
+             <th style="text-align:left;"><input type="checkbox" name="otherFixture" /> Other</th>
+         </tr>
+         <tr>
+             <td></td>
+             <td><input type="text" name="oscillator" style="width: 75%;"/></td>
+             <td><input type="text" name="rotary" style="width: 75%;"/></td>
+             <td><input type="text" name="thruFeed" style="width: 75%;"/></td>
+             <td><input type="text" name="other" style="width: 75%;"/></td>             
+         </tr>
+         <tr>
+             <th colspan="3"></th>
+             <th style="font-style:italic;">Head Alignment:</th>
+             <td><input type="text" name="headAlignment" style="width: 75%;"/></td>
+         </tr>
+     </table>
+     <table id="tableFive">
+         <tr>
+             <th>Dresser (Tool/Type)</th>
+             <th>Top to Bottom/Inclination</th>
+             <th>Front to Back</th>
+         </tr>
+         <tr>
+             <td><input type="text" name="dresserToolType" /></td>
+             <td><input type="text" name="topToBottomInclination" /></td>
+             <td><input type="text" name="frontToBack" /></td>
+         </tr>
+         <tr>
+             <th colspan="4">Additional Notes</th>
+
+         </tr>
+         <tr>
+             <td colspan="4"><textarea rows="3" name="additionalNotes"></textarea></td>           
+         </tr>
+     </table>

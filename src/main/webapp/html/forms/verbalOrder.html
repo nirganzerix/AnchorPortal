@@ -1,0 +1,187 @@
+<style>
+        input[type="text"]{
+            width: 98%;
+        }
+        table {
+            width: 45%;
+        }
+        table table {
+            width: 100%;
+        }
+        #tableOne td, #tableOne th {
+            vertical-align: bottom;
+        }
+        table.halvesTable td, table.halvesTable th {
+            width: 50%;
+        }
+        label {
+            font-size: 14px;
+        }
+        textarea {
+            width: 98%;
+            resize: none;
+        }
+        .center {
+            text-align: center;
+        }
+        .rightAlign {
+            text-align: right;
+        }
+    </style>
+    
+     <table id="tableOne">
+         <tr>
+             <td colspan="4"><h1 style="float:right;">Verbal Order</h1></td>
+         </tr>
+         <tr>
+             <td style="width: 40%;"></td>
+             <td style="width: 20%;">
+                <table>
+                    <tr><td class="rightAlign"><label for="discCylinder">Disc/Cylinder</label></td><td><input type="checkbox" name="discCylinder" id="discCylinder" /></td></tr>
+                    <tr><td class="rightAlign"><label for="centerless">Centerless</label></td><td><input type="checkbox" name="centerless" id="centerless" /></td></tr>
+                    <tr><td class="rightAlign"><label for="rollWheel">Roll Wheel</label></td><td><input type="checkbox" name="rollWheel" id="rollWheel" /></td></tr>
+                    <tr><td class="rightAlign"><label for="regulatingWheel">Regulating Wheel</label></td><td><input type="checkbox" name="regulatingWheel" id="regulatingWheel" /></td></tr>
+                    <tr><td class="rightAlign"><label for="cbnPlated">CBN Plated</label></td><td><input type="checkbox" name="cbnPlated" id="cbnPlated" /></td></tr>
+                </table>
+             </td>
+             <td style="width: 20%;">
+               <table>
+                    <tr><td class="center"><label for="newCustomer">New Customer</label></td><td><input type="checkbox" name="newCustomer" id="newCustomer" /></td></tr>
+                    <tr><td class="center"><label for="firstTrial">First Trial</label></td><td><input type="checkbox" name="firstTrial" id="firstTrial" /></td></tr>
+                    <tr><td class="center"><label for="restock">Restock</label></td><td><input type="checkbox" name="restock" id="restock" /></td></tr>
+                </table>
+             </td>
+             <td style="width: 20%;">
+               <table>
+                    <tr><th>Sales Order</th></tr>
+                    <tr><td><input type="text" name="salesOrder" /></td></tr>
+                </table>
+             </td>
+         </tr>
+      </table>
+      
+      <table>
+          <tr>
+            <th>Product Number</th>
+            <th>Price</th>
+            <th>Date</th>
+          </tr>
+          <tr>
+            <td><input type="text" name="productNumber" /></td>
+            <td><input type="text" name="price" /></td>
+            <td><input type="text" name="date" /></td>
+          </tr>
+      </table>
+      <table class="halvesTable">
+          <tr>
+            <th>Size</th>
+            <th>Specification</th>
+          </tr>
+          <tr>
+            <td><input type="text" name="size" /></td>
+            <td><input type="text" name="specification" /></td>
+          </tr>
+          <tr>
+            <th>Customer</th>
+            <th>Purchase Order Info (Required)</th>
+          </tr>
+          <tr>
+            <td><textarea rows="5" name="customer"></textarea></td>
+            <td><textarea rows="5" name="purchaseOrderInfo"></textarea></td>
+          </tr>
+          <tr>
+            <td>
+              <table>
+                <tr>
+                    <th>Ship To</th>
+                </tr>
+                <tr>
+                    <td><textarea rows="5" name="shipTo"></textarea></td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <table>
+                <tr>
+                    <td>
+                      <table>
+                        <tr>
+                          <th>Ship Via</th>
+                        </tr>
+                        <tr>
+                          <td><input type="text" name="shipVia" /></td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td>
+                        <table>
+                          <tr>
+                            <td class="rightAlign"><label for="prepayAndBill">Prepay and Bill</label></td>
+                            <td style="width: 10%;"><input type="checkbox" name="prepayAndBill" id="prepayAndBill" /></td>
+                          </tr>
+                          <tr>
+                            <td class="rightAlign"><label for="prepaid">Prepaid</label></td>
+                            <td style="width: 10%;"><input type="checkbox" name="prepaid" id="prepaid" /></td>
+                          </tr>
+                          <tr>
+                            <td class="rightAlign"><label for="collect">Collect</label></td>
+                            <td style="width: 10%;"><input type="checkbox" name="collect" id="collect" /></td>
+                          </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                  <th colspan="2">Products to Ship With</th>
+                </tr>
+                <tr>
+                  <td colspan="2"><textarea rows="3" name="productsToShipWith"></textarea></td>
+                </tr>
+                </table>
+            </td>
+          </tr>
+          <tr>
+            <th>Special Markings</th>
+            <th>Customer References</th>
+          </tr>
+          <tr>
+            <td><textarea rows="5" name="specialMarkings"></textarea></td>
+            <td>
+              <table>
+                <tr><th>Quote Number</th><td><input type="text" name="quoteNumber" /></td></tr>
+                <tr><th>Last Sales Order #:</th><td><input type="text" name="lastSalesOrderNumber" /></td></tr>
+                <tr><th>Customer Order #:</th><td><input type="text" name="customerOrderNumber" /></td></tr>
+                <tr><th>Last Product #</th><td><input type="text" name="lastProductNumber" /></td></tr>
+              </table>
+            </td>
+          </tr>
+      </table>
+      
+      <table>
+        <tr>
+          <th style="width: 10%;">Qty</th>
+          <th>Ship Date</th>
+          <th>Hold Ready Date</th>
+        </tr>
+        <tr>
+          <td style="width: 10%;"><input type="text" name="qty" /></td>
+          <td><input type="text" name="shipDate" /></td>
+          <td><input type="text" name="holdReadyDate" /></td>
+        </tr>
+        <tr>
+          <th colspan="3">Additional Information</th>
+        </tr>
+        <tr>
+          <td colspan="3"><textarea rows="6" name="additionalInformation"></textarea></td>
+        </tr>
+      </table>
+      
+      <table>
+        <tr>
+          <th>Called in By</th>
+          <th>Taken By</th>
+        </tr>
+        <tr>
+          <td><input type="text" name="calledInBy" /></td>
+          <td><input type="text" name="takenBy" /></td>
+        </tr>
+      </table>

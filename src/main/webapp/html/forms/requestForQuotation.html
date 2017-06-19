@@ -1,0 +1,103 @@
+ <style>
+        input[type="text"]{
+            width: 98%;
+        }
+        table {
+            width: 45%;
+        }
+        
+        table table {
+            width: 100%;
+        }
+        
+        textarea {
+            width: 98%;
+            resize: none;
+        }
+    </style>
+    
+    <table>
+         <tr>
+             <td colspan="2"><h1 style="float:right;">Request for Quotation</h1></td>
+         </tr>
+         <tr>
+             <td style="width: 50%;">
+                 <table>
+                     <tr><th>Company Name</th></tr>
+                     <tr><td><input type="text" name="companyName" /></td></tr>
+                     <tr><th>Billing Address</th></tr>
+                     <tr><td><textarea rows="4" name="billingAddress"></textarea></td></tr>
+                 </table>
+             </td>
+             <td style="width: 50%;">
+                 <table>
+                     <tr><th>New Customer</th><th>Date</th></tr>
+                     <tr><td><input type="text" name="newCustomer" /></td><td><input type="text" name="date" /></td></tr>
+                     <tr><th>Sales Rep</th><th>Quote Via</th></tr>
+                     <tr><td><input type="text" name="salesRep" /></td><td><input type="text" name="quoteVia" /></td></tr>
+                     <tr><th>Phone</th><th>Fax</th></tr>
+                     <tr><td><input type="text" name="phone" /></td><td><input type="text" name="fax" /></td></tr>
+                 </table>
+             </td>
+         </tr>
+             <tr>
+                 <th>Shipping Address</th>
+                 <th>Email</th>
+             </tr>
+             <tr>
+                 <td><textarea rows="4" name="shippingAddress"></textarea></td>
+                 <td><textarea rows="4" name="email"></textarea></td>                 
+             </tr>
+             <tr>
+                 <th>Attn:</th>
+                 <th>CC</th>
+             </tr>
+             <tr>
+                 <td><input type="text" name="attn" /></td>
+                 <td><input type="text" name="cc" /></td>
+             </tr>
+             <tr>
+                 <th>Size</th>
+                 <th>Competitors Spec</th>
+             </tr>
+             <tr>
+                 <td><input type="text" name="size" /></td>
+                 <td><input type="text" name="competitorsSpec" /></td>
+             </tr>
+             <tr>
+                 <th>Competitors Price</th>
+                 <th>Special Price Request</th>
+             </tr>
+             <tr>
+                 <td><input type="text" name="competitorsPrice" /></td>
+                 <td><input type="text" name="specialPriceRequest" /></td>
+             </tr>
+         </table>
+         
+         <table>
+              <tr>
+                  <th>Normal Ordering Quantity</th>
+                  <th>Release Quantity</th>
+                  <th>Monthly Usage</th>
+              </tr>
+              <tr>
+                 <td><input type="text" name="normalOrderingQuantity" /></td>
+                 <td><input type="text" name="releaseQuantity" /></td>
+                 <td><input type="text" name="monthlyUsage" /></td>
+              </tr>
+              <tr>
+                  <th colspan="3">Special Terms Request</th>
+              </tr>
+              <tr>
+                  <td colspan="3"><input type="text" name="specialTermsRequest" /></td>
+              </tr>
+              <tr>
+                  <th colspan="3">Notes</th>
+              </tr>
+              <tr>
+                  <td colspan="3"><textarea rows="3" name="notes"></textarea></td>
+              </tr>
+         </table>
+         
+         <table>
+      </table>
