@@ -11,6 +11,15 @@ pageEncoding="ISO-8859-1"%>
 	<body id="loginBody">
 		<div id="pageBorder" align=center>
 			<div id="pageContainer">
+				<a href="/AnchorPortal/home"><img style="margin-top:6%;" src="/AnchorPortal/res/images/anchor_logo.png"></a>
+			
+				<span style="color:white;display:inline-block;vertical-align:top;margin-top:6%;margin-left:37%;">
+					<span style="margin-right:10px;">Hello, John</span>
+					<span>|</span>
+					<a href="/AnchorPortal/login" style="margin-left:10px;color:white;">Logout</a>
+				</span>
+				<br/><br/>
+				
 				<%@ include file="/html/landingPage.html" %>
 			</div>
 		</div>

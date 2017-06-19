@@ -14,15 +14,15 @@ public class WebController {
 	   public String home() {
 	      return "home";
 	   }
-	@RequestMapping(value = "/home/form", method = RequestMethod.GET)
+	@RequestMapping(value = "/submitAForm", method = RequestMethod.GET)
 	   public String form() {
 	      return "form";
 	   }
-	@RequestMapping(value = "/home/quote", method = RequestMethod.GET)
+	@RequestMapping(value = "/quote", method = RequestMethod.GET)
 	   public String quote() {
 	      return "quote";
 	   }
-	@RequestMapping(value = "/home/sale", method = RequestMethod.GET)
+	@RequestMapping(value = "/sale", method = RequestMethod.GET)
 	   public String sale() {
 	      return "sale";
 	   }
