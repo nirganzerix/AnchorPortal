@@ -1,12 +1,14 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
 <div style="width:80%;color:white;">	
 	<div style="width:25%;float:left;">
 	
 		<div class="vertical-menu" style="height:auto;overflow:hidden;">
-		  	<a href="https://script.google.com/macros/s/AKfycbzbTX6qx6sVSgOVq7edZeKH0jFD3MR9R_oTN7ybD7tDs6_TUIU/exec">Abrasive Trial Report</a>
-			<a href="https://script.google.com/macros/s/AKfycbz5FdKeYp9Rcx9Kc_fzM2uwBZskDiidBVUxPg4vOERw7yox95_D/exec">Customer Feedback</a>
-			<a href="https://script.google.com/macros/s/AKfycbyWn9OMu2XjeQUzQtW7oRBQmFPGVmmS8lZBGv3S6asNTg91haM/exec">Customer Operations Request</a>
-			<a href="https://script.google.com/macros/s/AKfycbyOuN3vaZ9TXp5KoC8U1Hl29otHMOzR0UlptoSlNZbFTjogyAQn/exec">Request for Quotation</a>
-			<a href="https://script.google.com/macros/s/AKfycbyrEeqGMx_M_d8pUPFedBTaU4NbMRY9MIBrXFxxDbm3Vg0btLNM/exec">Verbal Order</a>
+		  	<a href="/AnchorPortal/submitAForm?report=abrasiveTrialReport">Abrasive Trial Report</a>
+			<a href="/AnchorPortal/submitAForm?report=customerFeedback">Customer Feedback</a>
+			<a href="/AnchorPortal/submitAForm?report=customerOperationsReport">Customer Operations Request</a>
+			<a href="/AnchorPortal/submitAForm?report=requestForQuotation">Request for Quotation</a>
+			<a href="/AnchorPortal/submitAForm?report=verbalOrder">Verbal Order</a>
 		</div>
 		
 		<div style="margin-top:20px;">
@@ -28,56 +30,28 @@
 	
 	</div>
 	
-	<div>
-			<table>
-<tr>
-    <td colspan="2"></td>
-    <td colspan="2"><h1 style="float:right;">Abrasive Trial Report</h1></td>
-</tr>
-<tr>
-    <th colspan="3"></th>
-    <th>Part Being Ground</th>
-</tr>
-    <td colspan="3"></td>
-    <td><input name="pbg" type="text" /></td>
-<tr>
-</tr>
-<tr>
-    <th>Customer/Location</th>
-    <th>Product Number</th>
-    <th>Sales Rep</th>
-    <th>Date</th>
-</tr>
-<tr>
-    <td><input name="custLoc" style="width: 100%;" type="text" /></td>
-     <td><input name="prodNum" type="text" /></td>
-     <td><input name="salesRep" type="text" /></td>
-     <td><input name="datevar" type="text" /></td>
- </tr>
-<tr>
-   <th>Performance Data</th>
-   <th>Customer Requirement</th>
-   <th>Competitor Specification</th>
-   <th>Anchor Specification</th>
-</tr>
-<tr>
-   <td></td>
-   <td><input type="text"/></td>
-   <td><input type="text"/></td>
-   <td><input type="text"/></td>
-</tr>
-<tr>
-   <td style="vertical-align: top;">Positive Aspects:</td>
-<td colspan="3"><textarea name="posAs" rows="3" style="width: 99%; resize: none;"></textarea></td>
-</tr>
-<tr>
-   <td style="vertical-align: top;">Negative Aspects:</td>
-<td colspan="3"><textarea name="negAs" rows="3" style="width: 99%; resize: none;"></textarea></td>
-</tr>
-<tr>
-   <td style="vertical-align: top;">Additional Comments:</td>
-<td colspan="3"><textarea name="addCom" rows="3" style="width: 99%; resize: none;"></textarea></td>
-</tr>
-</table>
+	<div id="formContainer">
+	
 	</div>
 </div>
+
+<script type="text/javascript" language="JavaScript">
+function $_GET(param) {
+	var vars = {};
+	window.location.href.replace( location.hash, '' ).replace( 
+		/[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
+		function( m, key, value ) { // callback
+			vars[key] = value !== undefined ? value : '';
+		}
+	);
+
+	if ( param ) {
+		return vars[param] ? vars[param] : null;
+	}
+	return vars;
+}
+
+if($_GET('report') && $_GET('report') !== ''){
+	$("#formContainer").load('forms/'+ $_GET('report') +'.html');
+}
+</script>
