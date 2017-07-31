@@ -6,6 +6,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
  
 @Controller
 public class WebController {
+	@RequestMapping(value="/", method = RequestMethod.GET)
+		public String root() {
+			return "redirect:/login";
+		}
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	   public String index() {
 	      return "login";
@@ -26,4 +30,5 @@ public class WebController {
 	   public String sale() {
 	      return "sale";
 	   }
+
 }
