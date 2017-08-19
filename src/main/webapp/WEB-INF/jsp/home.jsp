@@ -7,6 +7,9 @@ pageEncoding="ISO-8859-1"%>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<title>Anchor Portal</title>
 		<link href="${pageContext.request.contextPath}/res/css/main.css" rel="stylesheet" >
+		<script src="${pageContext.request.contextPath}/res/libs/jquery-3.2.1.min.js"></script>
+		<script src="${pageContext.request.contextPath}/res/libs/underscore-min.js"></script>
+		<script src="${pageContext.request.contextPath}/res/js/home.js"></script>
 	</head>
 	<body id="loginBody">
 		<div id="pageBorder" align=center>
