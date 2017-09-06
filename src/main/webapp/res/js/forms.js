@@ -16,8 +16,9 @@ var generateRequestObject = function(selectedReport, sendToEmail){
 var selectReport = function($this){
 	var reportId = $this.data('report-id');
 	$('#formContainer').empty();
-	var formTemplate = _.template($('#_'+reportId+'Template').html());
-	$('#formContainer').append(formTemplate({}));
+	var formTemplate = $.get('html/forms/'+reportId+'.html', function(data){
+		$('#formContainer').append(data);
+	});
 	_.each($('.reportLink'), function(reportLink){
 		$(reportLink).data('selected', 'false');
 	});

@@ -6,7 +6,6 @@ pageEncoding="ISO-8859-1"%>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<title>Anchor Portal</title>
-		<script type="text/template" src="${pageContext.request.contextPath}/html/forms/abrasiveTrialReport.html"></script>
 		<link href="${pageContext.request.contextPath}/res/css/main.css" rel="stylesheet" >
 		<script src="${pageContext.request.contextPath}/res/libs/jquery-3.2.1.min.js"></script>
 		<script src="${pageContext.request.contextPath}/res/libs/underscore-min.js"></script>
