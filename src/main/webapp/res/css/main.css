@@ -36,7 +36,7 @@ a {
 	overflow: scroll;
 }
 
-.vertical-menu a {
+.vertical-menu a, #outstandingReportsLabels {
     background-color: #eee;
     color: black;
     display: block;
@@ -46,4 +46,15 @@ a {
 
 .vertical-menu a:hover {
     background-color: #ccc;
+}
+
+.vertical-menu a span, #outstandingReportsLabels span{
+    width: 30%;
+    display:inline-block;
+}
+
+#outstandingReportsLabels {
+	border-bottom: 1px solid black;
+	color: white;
+	background-color: #354961;
 }

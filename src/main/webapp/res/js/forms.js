@@ -58,7 +58,7 @@ var bindEvents = function(){
 		}
 	});
 	
-	$('#submitReport').click(submitReport);
+	//$('#submitReport').click(submitReport);
 };
 
 $(document).ready(function(){	

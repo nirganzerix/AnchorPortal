@@ -24,10 +24,20 @@ var getReportHistory = function(){
 };
 
 var bindEvents = function(){
-	//generate report pdf when clicking a table row
+	$('#filterReports').on('change', function(){
+		var reportRows = $('#outstandingReports a');
+		var filter = this.value;
+		if(filter === 'all'){
+			$(reportRows).show();
+		} else {
+			_.each(reportRows, function(row){
+				$(row).hasClass(filter) ? $(row).show() : $(row).hide();
+			});
+		}
+	});
 };
 
 $(document).ready(function(){	
 	bindEvents();
-	getReportHistory();
+	//getReportHistory();
 });
