@@ -12,11 +12,11 @@ import com.anchorabrasives.AnchorPortal.service.ReportToPDFService;
 @Controller
 public class ReportController {
 	
-	@Autowired
-	ReportToPDFService reportToPDFService;
+	ReportToPDFService reportToPDFService = new ReportToPDFService();
+	
 	
 	@RequestMapping(value="/submitReport", method = RequestMethod.POST)
 		public void submitReport(ReportRequest reportRequest) {
-			//reportToPDFService.generateReportPDF();
+			reportToPDFService.generateReportPDF();
 		}
 }
