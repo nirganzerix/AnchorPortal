@@ -25,6 +25,8 @@ public class EmailService {
 
 	      // Setup mail server
 	      properties.setProperty("mail.smtp.host", host);
+	      properties.setProperty("mail.user", "myuser");
+	      properties.setProperty("mail.password", "mypwd");
 
 	      // Get the default Session object.
 	      Session session = Session.getDefaultInstance(properties);
