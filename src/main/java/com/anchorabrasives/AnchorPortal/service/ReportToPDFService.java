@@ -94,7 +94,7 @@ public class ReportToPDFService {
 			}
             
             try {
-				document.save("target/SimpleForm.pdf");
+				document.save("C:\\Users\\Nirganzerix\\Documents\\Projects\\SimpleForm.pdf");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
